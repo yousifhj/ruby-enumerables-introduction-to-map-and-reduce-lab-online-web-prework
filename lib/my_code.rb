@@ -51,17 +51,17 @@ end
   def reduce_to_all_true(array)
   counter = 0 
   while counter < array.size do
-    return false if (array == 0)
+    return false if ()
     counter += 1
   end
   return false 
 end 
 
-  def reduce_to_any(array)
+  def reduce_to_any_true(array)
   counter = 0 
   while counter < array.size do
-    return false if (current_array)
+    return false if counter == array
     counter += 1
   end
-  return true 
+  return true
 end 

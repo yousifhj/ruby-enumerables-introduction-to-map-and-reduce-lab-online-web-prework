@@ -49,12 +49,14 @@ def reduce_to_total(array, starting_point=0)
 end 
   
 def reduce_to_all_true(array)
-  array.all? { |e| condition_met(e) } 
+  counter = 0 
+  while counter < array.size do
+    return false if CONDITIOPN 
+    counter += 1 
+  end
+  return true
 end
 
-def condition_met(e)
-  e != 7
-end
 
   def reduce_to_any_true(array)
   counter = 0 
